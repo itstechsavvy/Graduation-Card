@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You've Got a Mail! - A Vintage Tech Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+</head>
+<body class="body-bg">
+    <div class="scene" onclick="flipCard()">
+        <div class="card" id="flip-card">
+            <!-- Front of the card -->
+            <div class="card__face card__face--front">
+                <div class="title-bar">
+                    <span class="title-bar-text">June 2025</span>
+                    <div class="title-bar-controls">
+                        <div class="control-button">_</div>
+                        <div class="control-button">[]</div>
+                        <div class="control-button">X</div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <svg class="w-24 h-24 mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="miter">
+                        <path d="M2 5h20v14H2z"></path>
+                        <path d="M2 5l10 9 10-9"></path>
+                    </svg>
+                    <p class="text-2xl leading-tight">You've got a mail girl</p>
+                    <p class="mt-8 text-lg animate-pulse">[ Click to open ]</p>
+                </div>
+            </div>
+
+            <!-- Back of the card -->
+            <div class="card__face card__face--back">
+                <div class="title-bar">
+                    <span class="title-bar-text">New Mail</span>
+                    <div class="title-bar-controls">
+                        <div class="control-button">_</div>
+                        <div class="control-button">[]</div>
+                        <div class="control-button">X</div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4 text-blue-800 tracking-wider">Happy Graduation Shizay!</h1>
+                    <p class="text-2xl mt-4">(Here’s to new beginnings and endless possibilities.)</p>
+                </div>
+                <div class="p-2 border-t-2 border-black text-right text-lg w-full">
+                    <p>From: Aiman Khan </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
